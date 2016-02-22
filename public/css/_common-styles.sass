@@ -1,0 +1,72 @@
+.pull-left
+  float: left
+
+.pull-right
+  float: right
+
+.inline-block
+  display: inline-block !important
+
+.flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+.border
+  border: 1px solid $lt-grey
+
+@each $side in top, right, bottom, left
+  .border-#{$side}
+    border-#{$side}: 1px solid $lt-grey
+
+.box-shadow
+  box-shadow: 0 2px 2px rgba(black, 0.2)
+
+.disabled
+  opacity: 0.3
+
+.btn
+  @extend .border
+  @extend .text-center
+  display: block
+  padding: 12px 10px 10px
+  +border-radius(3px)
+  @extend .font-wgsn
+  font-size: 12px
+  +transition(all 300ms)
+
+  &.btn-white
+    background: white
+
+  &.btn-black
+    background: black
+    border-color: black
+    color: white
+
+.bg-grey
+  background: lighten($lt-grey, 10)
+
+.hoverable
+  &:hover
+    cursor: pointer
+
+// HIDDEN
+.hidden-xs
+  @media (max-width: $screen-xs-max)
+    display: none !important
+
+.hidden-sm
+  @media (max-width: $screen-sm-max)
+    display: none !important
+
+.hidden-md
+  @media (max-width: $screen-md-max)
+    display: none !important
+
+.hidden-lg
+  @media (max-width: $screen-lg-max)
+    display: none !important
+
+.hidden-xl
+  @media (min-width: $screen-xl-min)
+    display: none !important

@@ -1,0 +1,33 @@
+// core
+@import "vars"
+@import "mixins"
+@import "blocks"
+@import "common-styles"
+@import "typography" 
+@import "grid"
+@import "header"
+@import "headroom"
+
+// ==================================================
+
+body
+  font-family: "Helvetica", sans-serif
+  margin: 0
+  padding: 0
+  background: white
+  font-size: 14px
+
+  .content-wrap
+    width: 80%
+    max-width: 1500px
+    margin: 0 auto
+
+  section
+    overflow: auto
+
+  #dummy-content
+    margin-top: $header-height
+
+*
+  box-sizing: border-box
+  +transition(all 400ms)

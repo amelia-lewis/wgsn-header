@@ -1,0 +1,61 @@
+// ====================
+// Screen sizes
+// ====================
+
+// Extra small screen / phone
+$screen-xs-min: 480px !default
+
+// Small screen / tablet
+$screen-sm-min: 768px !default
+
+// Medium screen / desktop
+$screen-md-min: 1000px !default
+
+// Large screen / wide desktop
+$screen-lg-min: 1200px
+
+// Large screen / extra wide desktop
+$screen-xl-min: 1500px
+
+// So media queries dont overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1) !default
+$screen-sm-max: ($screen-md-min - 1) !default
+$screen-md-max: ($screen-lg-min - 1) !default
+$screen-lg-max: ($screen-xl-min - 1) !default
+
+
+// ====================
+// Colors
+// ====================
+
+$xlt-grey: #f1f1f1
+$lt-grey: #ddd
+$md-grey: #999
+$dk-grey: #222
+
+$yellow: #f8bd34
+$fashion: #FF671f
+$li: #4a7729
+$instock: #4e87a0
+$styletrial: #307fe2
+$mindset: #75787b
+
+$label-red: #fb6360
+$label-orange: #f5a350
+$label-yellow: #f1cb56
+$label-green: #70c857
+$label-blue: #51b7ef
+$label-purple: #cd89dd
+
+
+// ====================
+// Sizes
+// ====================
+
+$global-product-row-height: 45px
+$product-row-height: 64px
+$header-height: $global-product-row-height + $product-row-height
+$page-content-height: calc(100vh - (#{$header-height}))
+$title-row-height: 60px
+$left-side-panel-width: 280px
+$comments-panel-width: 280px
